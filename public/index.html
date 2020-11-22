@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- react, react-dom dev bundles -->
+  <script crossorigin src="//unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  <!-- react-is -->
+  <script crossorigin src="//unpkg.com/react-is/umd/react-is.production.min.js"></script>
+
+  <!-- styled-components -->
+  <script crossorigin src="//unpkg.com/styled-components/dist/styled-components.min.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FEC Proxy Server Template</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="service1"></div>
-  <div id="service2"></div>
-  <div id="service3"></div>
-  <div id="service4"></div>
-  <script src="bundles/service1.js"></script>
-  <script src="bundles/service2.js"></script>
-  <script src="bundles/service3.js"></script>
-  <script src="bundles/service4.js"></script>
+  <div id="wrapper">
+
+    <div id="Header"></div>
+    <div id="booking"></div>
+    <div id="photos"></div>
+    <div id="ReviewsApp"></div>
+    <div id="NearbyApp"></div>
+
+  </div>
+  <script src="/bundles/service1.js"></script>
+  <script src="/bundles/service2.js"></script>
+  <script src="/bundles/service3.js"></script>
+  <script src="/bundles/service4.js"></script>
+
 </body>
 </html>
+

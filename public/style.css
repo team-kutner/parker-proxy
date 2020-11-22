@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+  box-sizing: border-box;
+}
+
+.red-star {
+  color: #ff385c;
+}
+
+#wrapper {
+  display: grid;
+  box-sizing: border-box;
+  max-height: 2640px;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr 6fr 9fr 4fr;
+  grid-template-areas:
+                      "header header"
+                      "photo photo"
+                      "detail booking"
+                      "review review"
+                      "more more";
+  grid-gap: 20px;
+}
+
+#Header {
+  grid-area: header;
+  background: #717171;
+}
+
+#booking {
+  grid-area: booking;
+
+}
+
+#photos {
+  grid-area: photo;
+  align-self: center;
+  justify-self: center;
+}
+
+#ReviewsApp {
+  grid-area: review;
+  background: #717171;
+  align-self: center;
+  justify-self: center;
+}
+
+#NearbyApp {
+  grid-area: more;
+  align-self: center;
+  justify-self: center;
+}

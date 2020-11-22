@@ -41,24 +41,28 @@
 */
 
 module.exports = {
+  //booking
   service1: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3001',
-    bundle: 'app.js',
+    api: ['/homes/:id/reservation', '/homes/:id/listing'],
+    url: 'http://localhost:5000',
+    bundle: 'bundle.js',
   },
+  //photos
   service2: {
-    api: 'FIX_ME',
+    api: '/homes/:id/photos',
     url: 'http://localhost:3002',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
+  //reviews
   service3: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3003',
-    bundle: 'app.js',
+    api: ['/homes/:id/reviews', '/reviews/images/*'],
+    url: 'http://localhost:3005',
+    bundle: 'bundle.js',
   },
+  //nearby homes
   service4: {
-    api: 'FIX_ME',
+    api: '/homes/:id/nearbyHomes',
     url: 'http://localhost:3004',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
 };
