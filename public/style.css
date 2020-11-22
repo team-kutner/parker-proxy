@@ -13,11 +13,11 @@ body {
 #wrapper {
   display: grid;
   box-sizing: border-box;
-  max-height: 2640px;
+  max-height: 2700px;
   height: 100%;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 5fr 6fr 9fr 4fr;
+  grid-template-rows: 1fr 5fr 6fr 10fr 4fr;
   grid-template-areas:
                       "header header"
                       "photo photo"
@@ -29,7 +29,6 @@ body {
 
 #Header {
   grid-area: header;
-  background: #717171;
 }
 
 #booking {
@@ -45,8 +44,7 @@ body {
 
 #ReviewsApp {
   grid-area: review;
-  background: #717171;
-  align-self: center;
+  align-self: start;
   justify-self: center;
 }
 

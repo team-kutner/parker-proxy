@@ -50,7 +50,7 @@ module.exports = {
   //photos
   service2: {
     api: '/homes/:id/photos',
-    url: 'http://localhost:3002',
+    url: 'http://localhost:3001',
     bundle: 'bundle.js',
   },
   //reviews
