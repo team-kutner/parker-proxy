@@ -56,7 +56,7 @@ module.exports = {
   //reviews
   service3: {
     api: ['/homes/:id/reviews', '/reviews/images/*'],
-    url: 'http://localhost:3005',
+    url: 'http://localhost:3010',
     bundle: 'bundle.js',
   },
   //nearby homes
