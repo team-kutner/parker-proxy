@@ -44,25 +44,25 @@ module.exports = {
   //booking
   service1: {
     api: ['/homes/:id/reservation', '/homes/:id/listing'],
-    url: 'http://localhost:5000',
+    url: 'http://3.128.201.131:5000/',
     bundle: 'bundle.js',
   },
   //photos
   service2: {
     api: '/homes/:id/photos',
-    url: 'http://localhost:3001',
+    url: 'http://3.138.157.130:5001/',
     bundle: 'bundle.js',
   },
   //reviews
   service3: {
     api: ['/homes/:id/reviews', '/reviews/images/*'],
-    url: 'http://localhost:3010',
+    url: 'http://3.12.102.227:3010/',
     bundle: 'bundle.js',
   },
   //nearby homes
   service4: {
     api: '/homes/:id/nearbyHomes',
-    url: 'http://localhost:3004',
+    url: 'http://52.53.172.231:5001/',
     bundle: 'bundle.js',
   },
 };

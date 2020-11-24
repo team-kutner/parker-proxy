@@ -6,9 +6,9 @@ body {
   box-sizing: border-box;
 }
 
-.red-star {
+/* .red-star {
   color: #ff385c;
-}
+} */
 
 #wrapper {
   display: grid;
