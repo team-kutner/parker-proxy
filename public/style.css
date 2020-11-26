@@ -13,10 +13,10 @@ body {
 #wrapper {
   display: grid;
   box-sizing: border-box;
-  max-height: 2700px;
+  max-height: 3050px;
   height: 100%;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 59% 41%;
   grid-template-rows: 1fr 5fr 6fr 10fr 4fr;
   grid-template-areas:
                       "header header"
@@ -24,7 +24,7 @@ body {
                       "detail booking"
                       "review review"
                       "more more";
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 
 #Header {
@@ -33,7 +33,7 @@ body {
 
 #booking {
   grid-area: booking;
-
+  justify-self: start;
 }
 
 #photos {
@@ -52,4 +52,12 @@ body {
   grid-area: more;
   align-self: center;
   justify-self: center;
+}
+
+#info {
+  grid-area: detail;
+  max-width: 700px;
+  height: auto;
+  align-self: center;
+  justify-self: end;
 }

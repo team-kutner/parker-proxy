@@ -43,8 +43,8 @@
 module.exports = {
   //booking
   service1: {
-    api: ['/homes/:id/reservation', '/homes/:id/listing'],
-    url: 'http://3.15.2.74:5000/',
+    api: ['/homes/:id/reservation', '/homes/:id/listing', '/booking/images/*'],
+    url: 'http://localhost:5000/',
     bundle: 'bundle.js',
   },
   //photos
