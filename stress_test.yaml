@@ -1,0 +1,25 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 30
+scenarios:
+  - flow:
+    - post:
+        url: "/api/homes/create/reservation"
+        json:
+          listingId: 3
+          checkIn: "2021-07-14"
+          checkOut: "2021-07-22"
+          adults: 5
+          children: 2
+          infants: 0
+          totalPrice: 220.51
+    - loop:
+      - get:
+          url: "/api/homes/9723452/reservation"
+      count: 100
+    - loop:
+      - get:
+          url: "/api/homes/9234192/listing"
+      count: 100
