@@ -17,7 +17,7 @@ scenarios:
           totalPrice: 220.51
     - loop:
       - get:
-          url: "/api/homes/9723452/reservation"
+          url: "/api/homes/9999999"
       count: 100
     - loop:
       - get:
