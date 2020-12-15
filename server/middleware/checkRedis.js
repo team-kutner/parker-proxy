@@ -1,7 +1,7 @@
 const redis = require('../redisConfig.js');
 
 const checkRedis = (req, res, next) => {
-  if (req.params['0'] === 'listing') {
+  if (req.params.endpoint === 'listing') {
     const { id } = req.params;
     redis.getAsync(`listLId${id}`)
       .then((result) => {
@@ -15,7 +15,7 @@ const checkRedis = (req, res, next) => {
         console.log(err);
         next();
       });
-  } else if (req.params['0'] === 'reservation') {
+  } else if (req.params.endpoint === 'reservation') {
     const { id } = req.params;
     redis.getAsync(`resLId${id}`)
       .then((result) => {
