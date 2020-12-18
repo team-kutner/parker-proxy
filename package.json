@@ -10,7 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
     "start:dev": "nodemon server",
-    "stress-test": "artillery run ./stress_test.yaml"
+    "stress-test": "artillery run ./stress_test.yaml",
+    "start:pm2": "pm2 start ./server/index.js --name proxy",
+    "stop:pm2": "pm2 stop proxy",
+    "restart:pm2": "pm2 restart proxy"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +24,7 @@
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.6",
     "morgan": "^1.10.0",
+    "pm2": "^4.5.1",
     "redis": "^3.0.2"
   },
   "devDependencies": {
